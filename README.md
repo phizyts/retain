@@ -1,84 +1,98 @@
-# Turborepo starter
+<div align="center">
+  <a href="https://github.com/phizyts/retain">
+    <img src="https://i.ibb.co/397c3N7C/image.png" alt="Logo" width="80" height="80">
+  </a>
 
-This Turborepo starter is maintained by the Turborepo core team.
+<h3 align="center">Retain</h3>
 
-## Using this example
+  <p align="center">
+    Minimal AI-powered note-taking to supercharge your writing and thinking.
+    <br />
+    <a href="https://retainnote.com/"><strong>Learn More »</strong></a>
+    <br />
+    <br />
+    <a href="https://retainnote.com/">View Demo</a>
+    ·
+    <a href="https://github.com/phizyts/retain/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/phizyts/retain/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-Run the following command:
+## About The Project
 
-```sh
-npx create-turbo@latest
-```
+**Retain** is a modern, minimalist, and AI-enhanced note-taking platform built for developers, students, and thinkers. Highlight, summarize, rewrite, or generate notes in seconds with built-in GPT and Claude support. Clean UX meets powerful writing workflows.
 
-## What's inside?
+> Free users get 10 credits/day. Paid users get full access.
 
-This Turborepo includes the following packages/apps:
+### Tech Stack
 
-### Apps and Packages
+- NextJS (Full-Stack Framework)
+- PostgreSQL & Prisma (Primary SQL Database)
+- Redis (Secondary NoSQL Caching DB)
+- TailwindCSS (Frontend Styling)
+- Better-Auth (Auth Framework)
+- Cloudinary (Image Storage)
+- TipTap (Text Editor)
+- Vercel AI SDK (AI Model Integration)
+- Stripe (Payment System)
+- Resend (Email)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+## Getting Started
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+To get a local copy up and running follow these simple example steps.
 
-### Utilities
+### Installation
 
-This Turborepo has some additional tools already setup for you:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/phizyts/retain.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Enter API Keys in `.env`
+   ```js
+   NEXT_PUBLIC_BASE_URL = "ENTER YOUR BASE URL";
+   DATABASE_URL = "ENTER YOUR POSTGRESQL URL";
+   BETTER_AUTH_SECRET = "ENTER YOUR AUTH SECRET";
+   GOOGLE_CLIENT_ID = "ENTER YOUR GOOGLE CLIENT ID";
+   GOOGLE_CLIENT_SECRET = "ENTER YOUR GOOGLE CLIENT SECRET";
+   GITHUB_CLIENT_ID = "ENTER YOUR GITHUB CLIENT SECRET";
+   GITHUB_CLIENT_SECRET = "ENTER YOUR GITHUB CLIENT SECRET";
+   CLOUDINARY_CLOUD_NAME = "ENTER YOUR CLOUDINARY NAME";
+   CLOUDINARY_API_KEY = "ENTER YOUR CLOUNDINARY API KEY";
+   CLOUDINARY_SECRET = "ENTER YOUR CLOUDINARY SECRET";
+   RESEND_API_KEY = "ENTER YOUR RESEND API ID";
+   ```
+4. Change git remote url to avoid accidental pushes to base project
+   ```sh
+   git remote set-url origin phizyts/retain
+   git remote -v # confirm the changes
+   ```
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## 🚀 Roadmap
 
-### Build
+To see the full roadmap and planned features, check out the [ROADMAP.md](./ROADMAP.md) file.
 
-To build all apps and packages, run the following command:
+## 🤝 Contributing
 
-```
-cd my-turborepo
-pnpm build
-```
+Contributions are welcome! Fork the repo and submit a PR:
 
-### Develop
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/Amazing`)
+3. Commit your changes (`git commit -m 'feat: add amazing'`)
+4. Push to GitHub (`git push origin feature/Amazing`)
+5. Open a PR
 
-To develop all apps and packages, run the following command:
+## 📄 License
 
-```
-cd my-turborepo
-pnpm dev
-```
+Distributed under the MIT License. See `LICENSE.txt` for more info.
 
-### Remote Caching
+## 📬 Contact
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+Your Name – [@phizyts](https://github.com/phizyts) – email@phizy.dev
+Project Link: [https://github.com/phizyts/retain](https://github.com/phizyts/retain)
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turborepo.com/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+---
